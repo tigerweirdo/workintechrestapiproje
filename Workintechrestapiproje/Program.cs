@@ -13,6 +13,8 @@ builder.Services.AddSwaggerGen();
 //currency service resolver
 
 builder.Services.AddScoped<ICurrencyService, CurrencyService>();
+builder.Services.AddScoped<IUserService, UserService>(); 
+
 
 
 var app = builder.Build();

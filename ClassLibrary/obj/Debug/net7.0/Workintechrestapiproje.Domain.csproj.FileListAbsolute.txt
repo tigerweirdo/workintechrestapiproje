@@ -1,0 +1,12 @@
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/bin/Debug/net7.0/Workintechrestapiproje.Domain.deps.json
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/bin/Debug/net7.0/Workintechrestapiproje.Domain.dll
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/bin/Debug/net7.0/Workintechrestapiproje.Domain.pdb
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/Workintechrestapiproje.Domain.csproj.AssemblyReference.cache
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/Workintechrestapiproje.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/Workintechrestapiproje.Domain.AssemblyInfoInputs.cache
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/Workintechrestapiproje.Domain.AssemblyInfo.cs
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/Workintechrestapiproje.Domain.csproj.CoreCompileInputs.cache
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/Workintechrestapiproje.Domain.dll
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/refint/Workintechrestapiproje.Domain.dll
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/Workintechrestapiproje.Domain.pdb
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/obj/Debug/net7.0/ref/Workintechrestapiproje.Domain.dll

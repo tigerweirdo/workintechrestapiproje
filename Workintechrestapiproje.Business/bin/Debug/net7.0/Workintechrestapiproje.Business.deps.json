@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Workintechrestapiproje.Business/1.0.0": {
+        "dependencies": {
+          "Workintechrestapiproje.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Workintechrestapiproje.Business.dll": {}
+        }
+      },
+      "Workintechrestapiproje.Domain/1.0.0": {
+        "runtime": {
+          "Workintechrestapiproje.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Workintechrestapiproje.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Workintechrestapiproje.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

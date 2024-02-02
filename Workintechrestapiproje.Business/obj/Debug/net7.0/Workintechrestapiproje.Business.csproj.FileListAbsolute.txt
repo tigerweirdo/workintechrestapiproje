@@ -1,0 +1,15 @@
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.csproj.AssemblyReference.cache
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.AssemblyInfoInputs.cache
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.AssemblyInfo.cs
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.csproj.CoreCompileInputs.cache
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/bin/Debug/net7.0/Workintechrestapiproje.Business.deps.json
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/bin/Debug/net7.0/Workintechrestapiproje.Business.dll
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/bin/Debug/net7.0/Workintechrestapiproje.Business.pdb
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/bin/Debug/net7.0/Workintechrestapiproje.Domain.dll
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/bin/Debug/net7.0/Workintechrestapiproje.Domain.pdb
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.csproj.CopyComplete
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.dll
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/refint/Workintechrestapiproje.Business.dll
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/Workintechrestapiproje.Business.pdb
+/Users/temmuzcetiner/Projects/Workintechrestapiproje/Workintechrestapiproje.Business/obj/Debug/net7.0/ref/Workintechrestapiproje.Business.dll

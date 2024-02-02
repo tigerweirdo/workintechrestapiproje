@@ -1,5 +1,6 @@
 ﻿
 using Workintechrestapiproje.Business;
+using Workintechrestapiproje.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +14,11 @@ builder.Services.AddSwaggerGen();
 //currency service resolver
 
 builder.Services.AddScoped<ICurrencyService, CurrencyService>();
-builder.Services.AddScoped<IUserService, UserService>(); 
-
 
 
 var app = builder.Build();
+
+app.UseTimeElapsedCalculate();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -31,5 +32,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCustomException();
 
 app.Run();

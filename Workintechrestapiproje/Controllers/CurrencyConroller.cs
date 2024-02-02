@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Workintechrestapiproje.Business;
+using Workintechrestapiproje.Domain.ApiLayer;
 
 namespace Workintechrestapiproje.Controllers
 {
@@ -19,6 +20,12 @@ namespace Workintechrestapiproje.Controllers
 
         public async Task<ActionResult<string>> GetCurrencySymbol(string currencyCode)
         {
+
+            if (string.IsNullOrEmpty(currencyCode))
+            {
+                throw new NullReferenceException();
+            }
+
             try
             {
                 string currencySymbol = await _currencyService.GetCurrencySymbol(currencyCode);
@@ -26,9 +33,10 @@ namespace Workintechrestapiproje.Controllers
             }
             catch (System.Exception e)
             {
-                return BadRequest(e.Message);
+                return BadRequest("Hata oluştu" + e.Message);
             }
         }
+
 
         [HttpGet]
         public async Task<ActionResult<Domain.CurrencyResponse>> GetCurrency()
@@ -40,8 +48,17 @@ namespace Workintechrestapiproje.Controllers
             }
             catch (System.Exception e)
             {
-                return BadRequest(e.Message);
+                throw e;
             }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<ApiLayerResponse>> PostCurrencyToApiLayer(string startDate, string endDate)
+        {
+
+            ApiLayerResponse apiLayerResponse = await _currencyService.PostCurrencyToApiLayer(startDate, endDate);
+            return apiLayerResponse;
+
         }
     }
 }

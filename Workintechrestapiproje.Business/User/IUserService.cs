@@ -1,6 +1,8 @@
-﻿using Workintechrestapiproje.Domain;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Workintechrestapiproje.Domain;
 
-namespace Workintechrestapiproje.Business
+namespace Workintechrestapiproje.Business.Users
 {
     public interface IUserService
     {

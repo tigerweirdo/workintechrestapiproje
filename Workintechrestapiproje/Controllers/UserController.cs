@@ -1,17 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Workintechrestapiproje.Business;
-using Workintechrestapiproje.Domain;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Workintechrestapiproje.Business.Users;
+using Workintechrestapiproje.Domain;
 
 namespace Workintechrestapiproje.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService)
+        public UsersController(IUserService userService)
         {
             _userService = userService;
         }

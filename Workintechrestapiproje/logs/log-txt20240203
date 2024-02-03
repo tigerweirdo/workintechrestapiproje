@@ -1,0 +1,7 @@
+2024-02-03 13:24:01.979 +03:00 [INF] GetCurrencySymbol methodu çağrıldı
+2024-02-03 13:24:02.000 +03:00 [INF] currencySymbol: €
+2024-02-03 13:24:17.047 +03:00 [INF] GetCurrencySymbol methodu çağrıldı
+2024-02-03 13:24:17.048 +03:00 [INF] currencySymbol: €
+2024-02-03 13:31:56.291 +03:00 [INF] CurrencyService içinde bir işlem başlatıldı.
+2024-02-03 13:31:56.320 +03:00 [INF] GetCurrencySymbol methodu çağrıldı
+2024-02-03 13:31:56.321 +03:00 [INF] currencySymbol: €

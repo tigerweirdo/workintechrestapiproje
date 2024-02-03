@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "0oaUJaZWNuQJtS5pylBM+3Jc2jI36CUQFU/wIJ6+tKm5kJjuM5iyKN86BVwLQh1lQ0VApSpHnOg3VYl+fsJIwQ==",
+  "dgSpecHash": "9M1TDCu/Y2rnkjc7IMFqQ8m+J7g7BRW4D/2zrRgDeiDWPaSWUAXS1pa4ZI157/v0JqMyziiccC3BpWB2zAXVfg==",
   "success": true,
   "projectFilePath": "/Users/temmuzcetiner/Projects/Workintechrestapiproje/ClassLibrary/Workintechrestapiproje.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/temmuzcetiner/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/microsoft.extensions.dependencymodel/6.0.0/microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/scrutor/4.2.2/scrutor.4.2.2.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/serilog/3.1.1/serilog.3.1.1.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/serilog.sinks.console/5.0.1/serilog.sinks.console.5.0.1.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/serilog.sinks.file/5.0.0/serilog.sinks.file.5.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/Users/temmuzcetiner/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

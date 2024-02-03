@@ -1,6 +1,7 @@
 ﻿
 using Workintechrestapiproje.Business;
 using Workintechrestapiproje.Middleware;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,14 +14,57 @@ builder.Services.AddSwaggerGen();
 
 //currency service resolver
 
-builder.Services.AddScoped<ICurrencyService, CurrencyService>();
+#region Scrutor resolvers
 
+var typeBaseService = typeof(BaseService);
+
+var assembly = typeBaseService.Assembly;
+
+builder.Services.Scan(selector =>
+        selector
+            .FromAssemblies(assembly)
+            .AddClasses(classSelector => classSelector.AssignableTo(typeof(BaseService)))
+            .AsImplementedInterfaces()
+            .WithScopedLifetime()
+        );
+
+
+
+var singletonBaseAssembly = typeof(BaseSingletonService).Assembly;
+builder.Services.Scan(selector =>
+        selector
+            .FromAssemblies(singletonBaseAssembly)
+            .AddClasses(classSelector => classSelector.AssignableTo(typeof(BaseSingletonService)))
+            .AsImplementedInterfaces()
+            .WithSingletonLifetime()
+        );
+
+#endregion
 
 var app = builder.Build();
 
 app.UseTimeElapsedCalculate();
 
-// Configure the HTTP request pipeline.
+
+#region SerilogConfiguration
+
+var logger = new LoggerConfiguration()
+#if DEBUG
+    .MinimumLevel.Information()
+#endif
+#if RELEASE
+.MinimumLevel.Error()
+#endif
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+Log.Logger = logger;
+
+#endregion
+
+
+// Configure the HTTP request p
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

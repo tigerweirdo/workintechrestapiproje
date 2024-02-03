@@ -1,0 +1,2 @@
+2024-02-03 14:34:28.421 +03:00 [WRN] RequestPath = /swagger/index.html --- HttpVerb = GET Total request time: 49ms
+2024-02-03 14:34:28.697 +03:00 [WRN] RequestPath = /swagger/v1/swagger.json --- HttpVerb = GET Total request time: 64ms

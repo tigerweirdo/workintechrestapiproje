@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
+using Serilog;
 using Workintechrestapiproje.Domain.Exceptions;
 
 namespace Workintechrestapiproje.Middleware
@@ -43,6 +44,7 @@ namespace Workintechrestapiproje.Middleware
                             Message = message
                         };
                         await context.Response.WriteAsJsonAsync(errorObj);
+                        Log.Error(exception.Error, exception.Error.Message);
                         Console.WriteLine(exception.Error.Message);
                     }
                 });
@@ -58,7 +60,7 @@ namespace Workintechrestapiproje.Middleware
 
                 var endTimeStamp = DateTime.Now;
                 var elapsed = endTimeStamp - startTimeStamp;
-                Console.WriteLine($"RequestPath = {ctx.Request.Path} --- HttpVerb = {ctx.Request.Method} Total request time: {elapsed.Milliseconds}");
+                Log.Warning($"RequestPath = {ctx.Request.Path} --- HttpVerb = {ctx.Request.Method} Total request time: {elapsed.Milliseconds}ms");
             });
         }
     }

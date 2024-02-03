@@ -8,4 +8,3 @@ namespace Workintechrestapiproje.Domain.Exceptions
         }
     }
 }
-

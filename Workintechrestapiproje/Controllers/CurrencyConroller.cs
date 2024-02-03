@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Workintechrestapiproje.Business;
+using Workintechrestapiproje.Business.Currency;
 using Workintechrestapiproje.Domain.ApiLayer;
+using Serilog;
+
 
 namespace Workintechrestapiproje.Controllers
 {
@@ -9,9 +11,9 @@ namespace Workintechrestapiproje.Controllers
     [ApiController]
     public class CurrencyController : ControllerBase
     {
-        private readonly Business.ICurrencyService _currencyService;
+        private readonly ICurrencyService _currencyService;
 
-        public CurrencyController(Business.ICurrencyService currencyService)
+        public CurrencyController(ICurrencyService currencyService)
         {
             _currencyService = currencyService;
         }
@@ -21,18 +23,26 @@ namespace Workintechrestapiproje.Controllers
         public async Task<ActionResult<string>> GetCurrencySymbol(string currencyCode)
         {
 
+            Log.Information("GetCurrencySymbol methodu çağrıldı");
+
             if (string.IsNullOrEmpty(currencyCode))
             {
+                Log.Error("currencyCode boş geçilemez");
                 throw new NullReferenceException();
             }
 
             try
             {
+
+
                 string currencySymbol = await _currencyService.GetCurrencySymbol(currencyCode);
+
+                Log.Information("currencySymbol: {currencySymbol}", currencySymbol);
                 return currencySymbol;
             }
             catch (System.Exception e)
             {
+                Log.Error(e.Message, e);
                 return BadRequest("Hata oluştu" + e.Message);
             }
         }
@@ -41,13 +51,16 @@ namespace Workintechrestapiproje.Controllers
         [HttpGet]
         public async Task<ActionResult<Domain.CurrencyResponse>> GetCurrency()
         {
+            Log.Information("GetCurrency methodu çağrıldı");
             try
             {
                 Domain.CurrencyResponse currencyResponse = await _currencyService.GetCurrency();
+                Log.Logger.Information("currencyResponse: {@currencyResponse}", currencyResponse);
                 return currencyResponse;
             }
             catch (System.Exception e)
             {
+                Log.Error(e.Message, e);
                 throw e;
             }
         }
@@ -55,8 +68,11 @@ namespace Workintechrestapiproje.Controllers
         [HttpPost]
         public async Task<ActionResult<ApiLayerResponse>> PostCurrencyToApiLayer(string startDate, string endDate)
         {
+            Log.Logger.Information("PostCurrencyToApiLayer methodu çağrıldı");
 
             ApiLayerResponse apiLayerResponse = await _currencyService.PostCurrencyToApiLayer(startDate, endDate);
+
+            Log.Logger.Information("apiLayerResponse: {@apiLayerResponse}", apiLayerResponse);
             return apiLayerResponse;
 
         }
